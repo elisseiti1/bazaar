@@ -1,1 +1,36 @@
-<p>cars works!</p>
+<mat-radio-group aria-label="Select an option">
+  <mat-radio-button value="1">E re</mat-radio-button>
+  <mat-radio-button value="2">E perdorur</mat-radio-button>
+</mat-radio-group>
+
+
+<mat-form-field appearance="fill">
+  <mat-label>Zgjidhni Marken</mat-label>
+  <mat-select [formControl]="cars">
+
+    <mat-option *ngFor="let car of brandList" [value]="car.name">{{car.name}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<mat-form-field appearance="fill">
+  <mat-label>Zgjidhni vitin e prodhimit</mat-label>
+  <mat-select [formControl]="cars">
+
+    <mat-option *ngFor="let year of yearProductionList" [value]="year">{{year}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<mat-slide-toggle *ngIf="isChecked" [(ngModel)]="isChecked"> Per Shitje</mat-slide-toggle>
+<mat-slide-toggle *ngIf="!isChecked" [(ngModel)]="isChecked"> Me Qera</mat-slide-toggle>
+
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Shuma e parave qe doni te shpenzoni</mat-label>
+    <input type="number" matInput placeholder="Fusni shifren qe doni te shpenzoni" [formControl]="moneyInput">
+    <mat-icon matSuffix>euro_symbol</mat-icon>
+  </mat-form-field>
+</form>
+

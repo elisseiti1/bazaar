@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {CarBrands} from './carBrands';
+import {CarBrands} from '../cars/carBrands';
 import {MatFormField} from '@angular/material/form-field';
 import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
@@ -21,9 +21,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
     // console.log(CarBrands);
-    console.log(this.yearProductionList);
-    this.brandList = CarBrands;
-    console.log(this.brandList, 'asdfas');
+
   }
 
 }

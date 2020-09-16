@@ -20,6 +20,8 @@ import { WorkApplicationsComponent } from './work-applications/work-applications
 import { ProductsComponent } from './products/products.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { MapComponent } from './map/map.component';
+import {LeafletModule} from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     CarsComponent,
     HousesComponent,
     WorkApplicationsComponent,
-    ProductsComponent
+    ProductsComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     MatSlideToggleModule,
     FormsModule,
     MatInputModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]
