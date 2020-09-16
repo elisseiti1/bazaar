@@ -10,7 +10,7 @@ import {FormControl} from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
 
-  brandList: [];
+  brandList: any;
   cars = new FormControl();
   constructor() { }
   ngOnInit(): void {
