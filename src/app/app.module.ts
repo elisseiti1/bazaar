@@ -12,12 +12,23 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { CarsComponent } from './cars/cars.component';
+import { HousesComponent } from './houses/houses.component';
+import { WorkApplicationsComponent } from './work-applications/work-applications.component';
+import { ProductsComponent } from './products/products.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CarsComponent,
+    HousesComponent,
+    WorkApplicationsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +41,11 @@ import {ReactiveFormsModule} from '@angular/forms';
     MatRadioModule,
     MatFormFieldModule,
     MatSelectModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSlideToggleModule,
+    FormsModule,
+    MatInputModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

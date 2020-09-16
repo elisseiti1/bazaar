@@ -12,11 +12,18 @@ export class HomeComponent implements OnInit {
 
   brandList: any;
   cars = new FormControl();
+  yearProductionList = Array.from(Array(2021).keys()).slice(1900).reverse();
+  isChecked = true;
+  moneyInput = new FormControl();
+  myControl = new FormControl();
+
+
   constructor() { }
   ngOnInit(): void {
-    console.log(CarBrands);
+    // console.log(CarBrands);
+    console.log(this.yearProductionList);
     this.brandList = CarBrands;
-    console.log(this.brandList,"asdfas");
+    console.log(this.brandList, 'asdfas');
   }
 
 }
