@@ -11,7 +11,7 @@ export class MapComponent implements OnInit, AfterViewInit {
   optionsSpec: any = {
     layers: [{ url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', attribution: 'Open Street Map' }],
     zoom: 11,
-    center: [41.3275 , 19.8187]
+    center: [41.1102, 20.0867]
   };
 
   zoom = this.optionsSpec.zoom;

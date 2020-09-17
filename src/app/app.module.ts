@@ -22,6 +22,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { MapComponent } from './map/map.component';
 import {LeafletModule} from '@asymmetrik/ngx-leaflet';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {LeafletModule} from '@asymmetrik/ngx-leaflet';
     HousesComponent,
     WorkApplicationsComponent,
     ProductsComponent,
-    MapComponent
+    MapComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
