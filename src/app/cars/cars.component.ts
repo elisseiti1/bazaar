@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {CarBrands} from '../cars/carBrands';
-import {MatFormField} from '@angular/material/form-field';
 import {FormControl} from '@angular/forms';
+import {CarBrands} from './carBrands';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-cars',
+  templateUrl: './cars.component.html',
+  styleUrls: ['./cars.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class CarsComponent implements OnInit {
 
   brandList: any;
   cars = new FormControl();
@@ -16,12 +15,12 @@ export class HomeComponent implements OnInit {
   isChecked = true;
   moneyInput = new FormControl();
   myControl = new FormControl();
-
-
   constructor() { }
-  ngOnInit(): void {
-    // console.log(CarBrands);
 
+  ngOnInit(): void {
+    console.log(this.yearProductionList);
+    this.brandList = CarBrands;
+    console.log(this.brandList, 'asdfas');
   }
 
 }
