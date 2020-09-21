@@ -2,9 +2,9 @@
   "name": "bazaar-project",
   "version": "0.0.0",
   "scripts": {
+    "start": "node index.js",
     "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
