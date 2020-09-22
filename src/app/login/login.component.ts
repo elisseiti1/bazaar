@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-login',
@@ -7,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(breakpointObserver: BreakpointObserver) {
+    breakpointObserver.observe([
+      Breakpoints.Tablet,
+      Breakpoints.TabletPortrait,
+      Breakpoints.TabletLandscape,
+      Breakpoints.WebPortrait,
+      Breakpoints.Web,
+      Breakpoints.WebLandscape,
+      Breakpoints.Handset,
+      Breakpoints.HandsetLandscape,
+      Breakpoints.HandsetPortrait])
+   ;
+  }
   ngOnInit(): void {
   }
 
