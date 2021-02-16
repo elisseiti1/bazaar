@@ -1,7 +1,9 @@
+<div>
 <mat-radio-group aria-label="Select an option">
   <mat-radio-button value="1">E re</mat-radio-button>
   <mat-radio-button value="2">E perdorur</mat-radio-button>
 </mat-radio-group>
+<br>
 
 
 <mat-form-field appearance="fill">
@@ -11,6 +13,7 @@
     <mat-option *ngFor="let car of brandList" [value]="car.name">{{car.name}}</mat-option>
   </mat-select>
 </mat-form-field>
+<br>
 
 
 <mat-form-field appearance="fill">
@@ -22,8 +25,8 @@
 </mat-form-field>
 
 
-<mat-slide-toggle *ngIf="isChecked" [(ngModel)]="isChecked"> Per Shitje</mat-slide-toggle>
-<mat-slide-toggle *ngIf="!isChecked" [(ngModel)]="isChecked"> Me Qera</mat-slide-toggle>
+<!--<mat-slide-toggle *ngIf="isChecked" [(ngModel)]="isChecked"> Per Shitje</mat-slide-toggle>-->
+<!--<mat-slide-toggle *ngIf="!isChecked" [(ngModel)]="isChecked"> Me Qera</mat-slide-toggle>-->
 
 
 <form class="example-form">
@@ -40,3 +43,4 @@
     Call the dealer
   </button>
 </a>
+</div>
